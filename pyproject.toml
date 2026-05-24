@@ -1,0 +1,17 @@
+[tool.hatchling]
+name = "macos-dock-manager"
+version = "0.1.0"
+authors = [
+    { name = "Femirins", email = "femirins@multica.ai" },
+]
+description = "A CLI tool to manage project-specific docks in macOS Spaces."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+
+[project.scripts]
+dock-manager = "dock_manager.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
